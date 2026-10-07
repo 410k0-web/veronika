@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f3eb">
+  <meta name="description" content="Маленький мир, созданный с любовью. Только для тебя.">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Для тебя, Вероника</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <script src="/theme-init.js?v=2"></script>
+  <link rel="stylesheet" href="/styles.css?v=3">
+  <link rel="stylesheet" href="/theme.css?v=2">
+  <link rel="stylesheet" href="/motion.css?v=2">
+  <script type="module" src="/app.js?v=3"></script>
+</head>
+<body>
+  <svg class="svg-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M13 5l7 7-7 7"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M20 12H4m7-7-7 7 7 7"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-letter" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="15" rx="3"/><path d="m3 6 9 7 9-7"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2Z"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-12h-7l1-8Z"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><path d="M4 10v11h16V10M12 6v15M3 6h18v4H3Z"/><path d="M12 6S5 7 5 3s7-1 7 3Zm0 0s7 1 7-3-7-1-7 3Z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.1A8.7 8.7 0 0 1 9.9 3.5 8.7 8.7 0 1 0 20.5 14.1Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4m0-14.2-1.4 1.4M6.3 17.7l-1.4 1.4"/></symbol>
+  </svg>
+  <div class="ambient" aria-hidden="true"><div class="ambient-orb orb-a"></div><div class="ambient-orb orb-b"></div><div id="photo-background" class="photo-background"></div><div id="photo-background-alt" class="photo-background"></div><div class="grain"></div></div>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="wordmark" href="/" aria-label="Для тебя, на начало"><span class="brand-mark"><svg class="icon"><use href="#i-heart"/></svg></span>для тебя<span class="wordmark-dot">.</span></a>
+      <span class="header-note">МАЛЕНЬКИЙ МИР ДЛЯ ОДНОГО ЧЕЛОВЕКА</span>
+      <div class="header-actions"><span class="header-love">с любовью <svg class="icon"><use href="#i-heart"/></svg></span><button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Включить тёмную тему"><svg class="icon theme-icon" aria-hidden="true"><use href="#i-moon"/></svg><span class="theme-label">Тёмная тема</span></button></div>
+    </header>
+    <main id="app" tabindex="-1" aria-live="polite" aria-atomic="false">
+      <section class="welcome-layout">
+        <div class="welcome-copy"><span class="eyebrow"><span class="tiny-star">✧</span> ПОСЛАНИЕ, КОТОРОЕ ЖДАЛО ТЕБЯ</span><h1 class="display">Привет<span class="copper">.</span></h1><p class="lead">Здесь всё начинается с тебя.</p><div class="loading-line" aria-label="Подготавливаю твоё послание"></div></div>
+        <div class="welcome-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="letter-object"><div class="envelope-lines"></div><span class="letter-caption">только для тебя</span><div class="wax-seal"><svg class="icon"><use href="#i-heart"/></svg></div></div><span class="art-note">Есть вещи, которые хочется<br>сохранить навсегда.</span><span class="floating-spark spark-one">✧</span><span class="floating-spark spark-two">✦</span></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span id="footer-caption">Каждый момент здесь о тебе</span><span class="footer-signature">410k0 <span>×</span> Вероника</span></footer>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <dialog id="modal" class="modal"><div id="modal-content"></div></dialog>
+  <noscript><div class="noscript">Этот подарок оживает с JavaScript. Включи его в браузере и обнови страницу.</div></noscript>
+</body>
+</html>

@@ -1,0 +1,12 @@
+/* The shell remains in place while individual objects move between scenes. */
+.scene-ghost{position:fixed;display:flex;flex-direction:column;justify-content:center;min-height:0;pointer-events:none;z-index:15;overflow:visible;transform-origin:center;contain:layout style}
+.scene-ghost *{pointer-events:none!important}
+.scene-transitioning #app{pointer-events:none}
+.scene-ghost,.scene-transitioning #app>section{isolation:isolate}
+.photo-background{transition:opacity 1.35s cubic-bezier(.22,1,.36,1);will-change:opacity}
+.ambient-orb{animation:ambient-drift 26s ease-in-out infinite alternate}
+.orb-b{animation-delay:-13s;animation-duration:32s}
+.theme-icon{transition:rotate .4s cubic-bezier(.22,1,.36,1)}
+[data-theme="dark"] .theme-icon{rotate:90deg}
+@keyframes ambient-drift{to{transform:translate(3vw,-2vh) scale(1.08)}}
+@media(prefers-reduced-motion:reduce){.ambient-orb{animation:none}.photo-background,.theme-icon{transition:none}.scene-ghost{display:none}}
